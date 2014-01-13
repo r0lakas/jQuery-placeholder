@@ -5,7 +5,7 @@ function addPlaceholder(selector,value){
 
 	if( $(selector).val() == '' ){
 		$(selector).val(value);	
-		$(selector).addClass('placeholderclr');
+		$(selector).addClass('placeholdercolor');
 	}
 	
 	//pries ivedant
@@ -14,7 +14,7 @@ function addPlaceholder(selector,value){
 		if($(this).val() == value ) {
 			  $(this).val("");
 			   //console.log('focus');
-			   $(selector).removeClass('placeholderclr');
+			   $(selector).removeClass('placeholdercolor');
 		}
 	});
 	
@@ -24,7 +24,7 @@ function addPlaceholder(selector,value){
 		if( !$(this).val() ) {
 			  $(this).val(value);
 			  //console.log('blur');
-			  $(selector).addClass('placeholderclr');
+			  $(selector).addClass('placeholdercolor');
 		}
 	});
 	
@@ -36,7 +36,7 @@ function addPlaceholderArea(selector,value){
 
 	if( $(selector).text() == '' ){
 		$(selector).text(value);
-		$(selector).addClass('placeholderclr');
+		$(selector).addClass('placeholdercolor');
 	}
 	
 	//pries ivedant
@@ -45,7 +45,7 @@ function addPlaceholderArea(selector,value){
 		if($(this).text() == value ) {
 			  $(this).val("");
 			   //console.log('focus');
-			   $(selector).removeClass('placeholderclr');
+			   $(selector).removeClass('placeholdercolor');
 		}
 	});
 	
@@ -55,7 +55,7 @@ function addPlaceholderArea(selector,value){
 		if( !$(this).text() ) {
 			  $(this).text(value);
 			  //console.log('blur');
-			  $(selector).addClass('placeholderclr');
+			  $(selector).addClass('placeholdercolor');
 		}
 	});
 	
